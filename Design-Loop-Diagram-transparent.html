@@ -106,18 +106,14 @@
     color: #fff; font-size: 20px; font-weight: var(--w-regular);
     border: 3px solid #fff; box-shadow: var(--shadow-md);
   }
-  .m-line { flex: 1; width: 3px; min-height: 28px; margin-top: 2px; }
+  .m-line { flex: 1; width: 6px; min-height: 28px; margin-top: 2px; }
   .m-content { flex: 1; padding: 2px 0 28px; }
   .m-content .mk-h3 { font-size: 18px; font-weight: var(--w-bold); margin: 2px 0 4px; }
   .m-content .mk-body { font-size: 14px; color: var(--fg-2); }
 
   .m-connector { display: flex; gap: 16px; }
   .m-connector .m-rail { min-height: 40px; }
-  .m-connector-icon {
-    width: 34px; height: 34px; border-radius: 50%; background: #fff;
-    border: 1.5px solid var(--fg-3); display: flex; align-items: center; justify-content: center;
-    color: var(--fg-3); flex: none;
-  }
+  .m-connector-icon { display: none; }
   .m-connector-icon.is-accent { border-color: var(--accent); color: var(--accent); }
   .m-connector .m-content { display: flex; align-items: center; padding: 0 0 12px; }
   .m-connector .mk-caption { margin: 0; font-size: 12px; }
@@ -125,8 +121,8 @@
   .m-hub-row { display: flex; gap: 16px; }
   .m-hub-badge {
     width: 60px; height: 60px; border-radius: 50%; flex: none;
-    background: #fff; border: 3px solid var(--accent); box-shadow: var(--shadow-md);
-    display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 24px;
+    background: #fff; border: 3px solid var(--ink-true); box-shadow: var(--shadow-md);
+    display: flex; align-items: center; justify-content: center; color: var(--ink-true); font-size: 24px;
   }
   .m-hub-content { flex: 1; padding: 6px 0 4px; }
   .m-hub-content .mk-h3 { font-family: var(--font-display); font-weight: var(--w-light); font-size: 22px; margin: 0 0 6px; }
@@ -190,11 +186,11 @@
   </svg>
 
   <!-- ===== CENTER HUB ===== -->
-  <div class="js-hub" style="position:absolute;left:530px;top:345px;width:300px;height:300px;border-radius:50%;background:#ffffff;box-shadow:0 0 0 14px rgba(255,255,255,0.55), var(--shadow-lg);z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 40px;box-sizing:border-box;animation:mkHubPulse 5s ease-in-out 1.5s infinite;transition:opacity .55s ease, transform .55s ease;">
-    <div style="font-size:30px;line-height:1;color:var(--accent);font-weight:var(--w-light);margin-bottom:14px;">&#8635;</div>
-    <div style="font-family:var(--font-display);font-weight:var(--w-light);font-size:36px;line-height:1;letter-spacing:-0.01em;color:var(--ink-true);">Code<br>Repository</div>
-    <div style="width:44px;height:2px;background:var(--ink-true);margin:18px 0 14px;"></div>
-    <div class="mk-caption" style="line-height:1.45;">Design system components, sharpened every pass.</div>
+  <div class="js-hub" style="position:absolute;left:530px;top:345px;width:300px;height:300px;border-radius:50%;background:#ffffff;box-shadow:0 0 0 14px rgba(255,255,255,0.55), var(--shadow-lg);z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 22px;box-sizing:border-box;animation:mkHubPulse 5s ease-in-out 1.5s infinite;transition:opacity .55s ease, transform .55s ease;">
+    <div style="font-family:var(--font-display);font-weight:var(--w-light);font-size:29px;line-height:1.1;letter-spacing:-0.01em;color:var(--ink-true);white-space:nowrap;">Shared Source<br>of Truth</div>
+    <div style="font-size:15px;line-height:1.4;color:var(--accent-bright);text-decoration:underline;margin-top:14px;">Customer feedback &middot;<br>Decisions &middot; Code &middot; Docs</div>
+    <div style="margin-top:18px;color:var(--ink-true);"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
+    <div class="mk-caption" style="line-height:1.45;margin-top:10px;">Living Design System</div>
   </div>
 
   <!-- ===== RESEARCH / FEEDBACK (between 5 and 1) ===== -->
@@ -355,10 +351,11 @@
 
   <!-- Hub -->
   <div class="m-hub-row">
-    <div class="m-hub-badge">&#8635;</div>
+    <div class="m-hub-badge"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
     <div class="m-hub-content">
-      <div class="mk-h3">Code Repository</div>
-      <div class="mk-caption">Design system components, sharpened every pass.</div>
+      <div class="mk-h3">Shared Source of Truth</div>
+      <div class="mk-caption" style="color:var(--accent-bright);text-decoration:underline;margin:4px 0 6px;">Customer feedback &middot; Decisions &middot; Code &middot; Docs</div>
+      <div class="mk-caption">Living Design System</div>
     </div>
   </div>
 
